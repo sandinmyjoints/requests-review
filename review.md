@@ -2,12 +2,9 @@
 Requests 0.14.0
 ===============
 
-by Kenneth Reitz
+## by Kenneth Reitz
 
-Reviewed by William John Bert
-
-What?
------
+### Reviewed by William John Bert
 
 This is a review of "Requests" by Kenneth Reitz. Requests is not a novel or
 memoir or book of poetry. It is a work of computer programming.
@@ -340,20 +337,20 @@ writing, but it has some affinities with such.
 Footnotes
 ---------
 
-[^1] Confusingly, API is also a term used to describe how computers talk to
+[^1]: Confusingly, API is also a term used to describe how computers talk to
    each other. It's kind of an umbrella term to express the idea of how to
    interact with a system.
 
-[^2] Though they used to be; see: http://en.wikipedia.org/wiki/Human_computer
+[^2]: Though they used to be; see: <http://en.wikipedia.org/wiki/Human_computer>
 
-[^3] It's a miracle to me that they do; imagine trying to sync up millions of
+[^3]: It's a miracle to me that they do; imagine trying to sync up millions of
    people, some smart, some not so smart, some opinionated, some
    indifferent. HTTP is successful where many, many other attempts at protocols
    have failed.
 
-[^4] As in Monty Python, not the snake genus.
+[^4]: As in Monty Python, not the snake genus.
 
-[^5] What does this all mean?
+[^5]: What does this all mean?
    >>> is Python telling me, "I'm ready for you to give me something to
        do," called a prompt. So when I write:
 
@@ -372,8 +369,8 @@ Footnotes
    I did; this is what I got; if you do the same, you should get the same
    result.
 
-[^6] You would see the same code if you view source in your browser. In most
+[^6]: You would see the same code if you view source in your browser. In most
    browsers, that's something you can do by looking under the "View" menu.
 
-[^7] I say "something like" because the exact numbers will vary on different
+[^7]: I say "something like" because the exact numbers will vary on different
    computers and at different times of execution.
