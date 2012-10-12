@@ -340,7 +340,7 @@ writing, but it has some affinities with such.
 Footnotes
 =========
 
-[#] What does this all mean?
+.. [#] What does this all mean?
    >>> is Python telling me, "I'm ready for you to give me something to
        do," called a prompt. So when I write:
 
@@ -361,7 +361,7 @@ Footnotes
 
 
 
-[#] What is a bug? From a programmer's perspective, it is when the programmer's
+.. [#] What is a bug? From a programmer's perspective, it is when the programmer's
    mental model diverges from reality, from the way the program actually
    works. If I know that x is a kind of integer, but I have made a mistake and
    at some point x is actually a list of integers, then when I try to add 5 to
@@ -372,21 +372,21 @@ Footnotes
    I will be writing code that diverges from reality.
 
 
-[#] Though they used to be; see: http://en.wikipedia.org/wiki/Human_computer
+.. [#] Though they used to be; see: http://en.wikipedia.org/wiki/Human_computer
 
-[#] As in Monty Python, not the snake genus.
+.. [#] As in Monty Python, not the snake genus.
 
-[#] You would see the same code if you view source in your browser. In most
+.. [#] You would see the same code if you view source in your browser. In most
    browsers, that's something you can do by looking under the "View" menu.
 
-[#] Confusingly, API is also a term used to describe how computers talk to
+.. [#] Confusingly, API is also a term used to describe how computers talk to
    each other. It's kind of an umbrella term to express the idea of how to
    interact with a system.
 
-[#] It's a miracle to me that they do; imagine trying to sync up millions of
+.. [#] It's a miracle to me that they do; imagine trying to sync up millions of
    people, some smart, some not so smart, some opinionated, some
    indifferent. HTTP is successful where many, many other attempts at protocols
    have failed.
 
-[#] I say "something like" because the exact numbers will vary on different
+.. [#] I say "something like" because the exact numbers will vary on different
    computers and at different times of execution.
