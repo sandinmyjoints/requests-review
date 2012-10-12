@@ -4,6 +4,19 @@ requests.models.Response
 >>> type(response)
 instance
 
+Bugs
+====
+
+What is a bug? From a programmer's perspective, it is when the programmer's
+mental model diverges from reality, from the way the program actually
+works. If I know that x is a kind of integer, but I have made a mistake and
+at some point x is actually a list of integers, then when I try to add 5 to
+x, I will get a result that is not only not what I expected, it's
+qualitatively different from what I expected; it's not the *kind* of result I
+expected, and therefore my code from that point written for a single integer
+is all going to be wrong for a list of integers. Until I figure out that bug,
+I will be writing code that diverges from reality.
+
 Reading and Re-reading
 ======================
 
