@@ -1,10 +1,11 @@
+===============
 Requests 0.14.0
+===============
+
 by Kenneth Reitz
+----------------
 
 Reviewed by William John Bert
-
-What?
-=====
 
 This is a review of "Requests" by Kenneth Reitz. Requests is not a novel or
 memoir or book of poetry. It is a work of computer programming.
@@ -60,8 +61,8 @@ What's an API?
 ==============
 
 To help others use Requests, Reitz did a lot of programming and put together an
-API ("application program interface," but everyone just says "API"). [APIs are
-how programmers tell other programmers how to use what they've made]_. It describes
+API ("application program interface," but everyone just says "API"). APIs are
+how programmers tell other programmers how to use what they've made[#]_. It describes
 what Requests can do for me, and how I can make it do those things.
 
 An API is inherently textual. It's something people read. Like a manual or a
@@ -93,7 +94,7 @@ an API." It's an act of confidence, and also vulnerability.
 APIs for Humans
 ===============
 
-Humans are not [computers]_, and vice versa, yet humans want to use
+Humans are not computers[#]_, and vice versa, yet humans want to use
 computers to do some important things better and faster than they can do without
 them.
 
@@ -133,7 +134,7 @@ daily, says:
 
 Without the full specification in minute detail, all programmers everywhere
 wouldn't be able to agree on how the thing works, so they would make systems
-that failed because they [couldn't talk to each other]_; small and not-so-small
+that failed because they couldn't talk to each other[#]_; small and not-so-small
 differences would crop up because of ambiguity, or unusual situations not
 anticipated or addressed in the specification, or mistakes, or faulty
 assumptions. (Computers make zero assumptions of their own; they have a way of
@@ -161,7 +162,7 @@ always a collective noun: code, never codes.) Code is as varied as
 other forms of human symbolic communication (like, say, writing), and it comes
 in a plethora of languages, each of which brings its own stylistic choices.
 
-A snippet of code from a language called [Python]_ looks like this:
+A snippet of code from a language called Python[#]_ looks like this:
 
 >>> import urllib, urllib2
 >>> req = urllib2.Request('http://www.goodreads.com')
@@ -169,14 +170,14 @@ A snippet of code from a language called [Python]_ looks like this:
 >>> response.read()
 
 This retrieves Goodreads' homepage, that is, all the HTML and CSS and JavaScript
-code that produces what you see when you go to www.goodreads.com [in your web
-browser]_.
+code that produces what you see when you go to www.goodreads.com in your web
+browser[#]_.
 
 Not for Human Consumption
 =========================
 
-What is `response`? It is a variable, a bit of data that looks [something
-like]_: `<addinfourl at 4338521656 whose fp = <socket._fileobject object at
+What is `response`? It is a variable, a bit of data that looks something
+like[#]_: `<addinfourl at 4338521656 whose fp = <socket._fileobject object at
 0x10297ce50>>`
 
 What the hell is that?
@@ -339,7 +340,7 @@ writing, but it has some affinities with such.
 Footnotes
 =========
 
-.. What does this all mean?
+[#] What does this all mean?
    >>> is Python telling me, "I'm ready for you to give me something to
        do," called a prompt. So when I write:
 
@@ -360,7 +361,7 @@ Footnotes
 
 
 
-.. What is a bug? From a programmer's perspective, it is when the programmer's
+[#] What is a bug? From a programmer's perspective, it is when the programmer's
    mental model diverges from reality, from the way the program actually
    works. If I know that x is a kind of integer, but I have made a mistake and
    at some point x is actually a list of integers, then when I try to add 5 to
@@ -371,21 +372,21 @@ Footnotes
    I will be writing code that diverges from reality.
 
 
-.. Though they used to be; see: http://en.wikipedia.org/wiki/Human_computer
+[#] Though they used to be; see: http://en.wikipedia.org/wiki/Human_computer
 
-.. As in Monty Python, not the snake genus.
+[#] As in Monty Python, not the snake genus.
 
-.. You would see the same code if you view source in your browser. In most
+[#] You would see the same code if you view source in your browser. In most
    browsers, that's something you can do by looking under the "View" menu.
 
-.. Confusingly, API is also a term used to describe how computers talk to
+[#] Confusingly, API is also a term used to describe how computers talk to
    each other. It's kind of an umbrella term to express the idea of how to
    interact with a system.
 
-.. It's a miracle to me that they do; imagine trying to sync up millions of
+[#] It's a miracle to me that they do; imagine trying to sync up millions of
    people, some smart, some not so smart, some opinionated, some
    indifferent. HTTP is successful where many, many other attempts at protocols
    have failed.
 
-.. I say "something like" because the exact numbers will vary on different
+[#] I say "something like" because the exact numbers will vary on different
    computers and at different times of execution.
