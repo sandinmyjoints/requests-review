@@ -26,7 +26,7 @@ getting too technical or bogged down in details. I hope that, in the spirit of
 experiment, you'll join me.
 
 Requests
-========
+--------
 
 Requests is a tool that Reitz made for other programmers. He thinks could make
 other people's lives easier, could enable other people to their work better,
@@ -39,7 +39,7 @@ But let's step back. What is a tool for programming? What does that mean? How
 could it bear resemblance to creative writing?
 
 The Problem
-===========
+-----------
 
 Programmers (or software engineers, coders, or hackers--we call ourselves lots
 of things) are in a constant battle against complexity. Computers always do
@@ -58,7 +58,7 @@ it. Our brains have evolved pockets that just do languagey stuff.
 When it comes to programming, we're just getting started. Our brains need help.
 
 What's an API?
-==============
+--------------
 
 To help others use Requests, Reitz did a lot of programming and put together an
 API ("application program interface," but everyone just says "API"). APIs are
@@ -92,7 +92,7 @@ Here's an interesting bit of jargon: programmers say that somebody is "exposing
 an API." It's an act of confidence, and also vulnerability.
 
 APIs for Humans
-===============
+---------------
 
 Humans are not computers[#]_, and vice versa, yet humans want to use
 computers to do some important things better and faster than they can do without
@@ -119,6 +119,8 @@ to program the computers to talk to each other.
 For example, one part of the HTTP 1.1 specification, the spec that defines
 how computers talk to each other on the parts of the internet that you and I use
 daily, says:
+
+::
 
   The most common form of Request-URI is that used to identify a
   resource on an origin server or gateway. In this case the absolute
@@ -155,7 +157,7 @@ rest of us could use.
 That is the act of someone translating a spec such as HTTP into working code.
 
 Code
-====
+----
 
 Code is the term I will use for what programmers write. (In this sense, it's
 always a collective noun: code, never codes.) Code is as varied as
@@ -174,38 +176,38 @@ code that produces what you see when you go to www.goodreads.com in your web
 browser[#]_.
 
 Not for Human Consumption
-=========================
+-------------------------
 
-What is `response`? It is a variable, a bit of data that looks something
-like[#]_: `<addinfourl at 4338521656 whose fp = <socket._fileobject object at
-0x10297ce50>>`
+What is ``response``? It is a variable, a bit of data that looks something
+like[#]_: ``<addinfourl at 4338521656 whose fp = <socket._fileobject object at
+0x10297ce50>>``
 
 What the hell is that?
 
 Expressive Power
-================
+----------------
 
 Reitz exposes the same thing to us, humans, as:
 
 >>> import requests
 >>> response = requests.get("http://www.goodreads.com")
 
-This `response` looks like: `<Response [200]>`
+This ``response`` looks like: ``<Response [200]>``
 
 Maybe that doesn't look much better than urllib or curl. It's two lines of code
 instead of four. Not a huge difference, perhaps. And what does 200 mean?
 
 To know what 200 means, you have to understand a part of the HTTP 1.1 spec. It
 says that 200 means, "That went OK". Out of the hundreds of pages of HTTP 1.1,
-that is one of first things any programmer learns. The `<addinfourl at
-4338521656 whose fp = <socket._fileobject object at 0x10297ce50>>` stuff from
+that is one of first things any programmer learns. The ``<addinfourl at
+4338521656 whose fp = <socket._fileobject object at 0x10297ce50>>`` stuff from
 above? Not nearly as clear. Probably requires some time spent looking around in
 documentation.
 
 Natural language, as you probably know, offers tremendous expressive power: we
 find it hard to conceive of thoughts that we can't express in it.
 
-`request.get` is, say, Hemingway: The fish tasted excellent. It's Strunk and
+``request.get`` is, say, Hemingway: The fish tasted excellent. It's Strunk and
 White: say what you mean as plainly as possible.
 
 urllib2's jumble is verbose, technically correct academic English, or legalese:
@@ -219,7 +221,7 @@ We might say Requests has more expressive power than urllib2. We might not.
 There is less friction between what I want to do with requests than urllib2.
 
 What it's like to work with a bad API
-=====================================
+-------------------------------------
 
 If that API is a mismatch with your way of thinking, you get frustrated,
 annoyed, bitter. You keep saying, It should do this, or HOw can it not do that?
@@ -229,7 +231,7 @@ click your nails, or maniacally tap your foot. You want to be doing something
 else. 
 
 What it's like to work with a good API
-==================================
+--------------------------------------
 
 It's more than if DFW or Lori Moore or John Ashbery released a notebook of
 exercises and prompts. It's as if they released part of their brain, so that you
@@ -247,7 +249,7 @@ What I have shown only scratches the surface; I'm not going to show more because
 the background needed to explain what it is too much.
 
 Dealing with Reality
-====================
+--------------------
 
 Programming strives to be subtext-free. We are damn earnest. The code is tricky
 enough. It is always trying to trip us up, making us question ourselves, driving
@@ -299,7 +301,7 @@ I truly want future readers--myself and others--to understand exactly what that
 code is doing, with no ambiguities.
 
 Theory of Mind
-==============
+--------------
 
 Programmers have to inhabit other minds: other programmers (target audience),
 users, developers of the libraries and APIs they're using; the computer itself.
@@ -338,55 +340,43 @@ thought and effort into. It solves problems. It is not a work of creative
 writing, but it has some affinities with such.
 
 Footnotes
-=========
-
-.. [#] What does this all mean?
-   >>> is Python telling me, "I'm ready for you to give me something to
-       do," called a prompt. So when I write:
-
-   >>> request.get
-   <Result >
-
-   It's this dialog:
-
-   Python: Give me something to do (>>>)
-
-   Me: request.get
-
-   Python: Here's what that resulted in (<Result >)
-
-   This is a common way for programmers to explain things to each. This is what
-   I did; this is what I got; if you do the same, you should get the same
-   result.
-
-
-
-.. [#] What is a bug? From a programmer's perspective, it is when the programmer's
-   mental model diverges from reality, from the way the program actually
-   works. If I know that x is a kind of integer, but I have made a mistake and
-   at some point x is actually a list of integers, then when I try to add 5 to
-   x, I will get a result that is not only not what I expected, it's
-   qualitatively different from what I expected; it's not the *kind* of result I
-   expected, and therefore my code from that point written for a single integer
-   is all going to be wrong for a list of integers. Until I figure out that bug,
-   I will be writing code that diverges from reality.
-
-
-.. [#] Though they used to be; see: http://en.wikipedia.org/wiki/Human_computer
-
-.. [#] As in Monty Python, not the snake genus.
-
-.. [#] You would see the same code if you view source in your browser. In most
-   browsers, that's something you can do by looking under the "View" menu.
+---------
 
 .. [#] Confusingly, API is also a term used to describe how computers talk to
    each other. It's kind of an umbrella term to express the idea of how to
    interact with a system.
 
+.. [#] Though they used to be; see: http://en.wikipedia.org/wiki/Human_computer
+
 .. [#] It's a miracle to me that they do; imagine trying to sync up millions of
    people, some smart, some not so smart, some opinionated, some
    indifferent. HTTP is successful where many, many other attempts at protocols
    have failed.
+
+.. [#] As in Monty Python, not the snake genus.
+
+.. [#] What does this all mean?
+
+   Three greater-than signs (>>>) is called a prompt, as in Python is prompting
+   me to give it something to do. So when I type:
+
+   >>> request.get("www.goodreads.com")
+   <Result [200]>
+
+   This is the little dialog taking place:
+
+   Python: I'm ready! Give me something to do.
+
+   Me: Retrieve this webpage, www.goodreads.com, for me.
+
+   Python: OK, did that, here's what I got.
+
+   Writing out prompt/command/result is a common way for programmers to give
+   each other examples: this is what I did; this is what I got; if you do the
+   same, you should get the same result.
+
+.. [#] You would see the same code if you view source in your browser. In most
+   browsers, that's something you can do by looking under the "View" menu.
 
 .. [#] I say "something like" because the exact numbers will vary on different
    computers and at different times of execution.
