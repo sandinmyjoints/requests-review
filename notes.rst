@@ -57,6 +57,18 @@ Assumptions like these, called invariants, are like load-bearing walls in a
 building. The system is built around them. After the fact, it's painful and
 costly to change them, and the reliability of the whole suffers.
 
+Expressive Power
+================
+
+Abstraction. Trading detailed knowledge at lower levels for greater
+comprehension at higher levels.
+
+Expressive power as compared to richness of language, ability to convey in fewest
+words necessary, nothing wasted.
+
+urllib2: need to do urlopen, then read each time. I may do this many times as I
+try to get something right. Then figure out what the hell the response is.
+
 
 
 A Quote
@@ -180,6 +192,46 @@ over time, unless one continually uses curl.
 
 Doing this by hand over and over again can feel tedious, exaggerated, overly
 verbose, not worth the return on effort. The value is the developer's time.
+
+
+Skipping Over
+=============
+
+I'm skipping over oauth, which is the way programs prove to other programs that
+they're allowed to do what they want to do. It's too technical. Requests is
+flexible malleable pliant enough to allow a plugin that neatly abstracts oauth,
+which is kind of a pain to deal with. I have no idea what the equivalent of that
+is in literary terms; fan fiction comes to mind but that connotes totally the
+wrong things and just really isn't a good equivalent at all.
+
+Metaphor
+========
+
+We use metaphor all the time. The device you're reading this on is almost
+certainly using metaphor, whether the desktop and files of a computer or the
+buttons of a smartphone. If the metaphor is especially tied to a real life
+object--like wood panelling--it's said to be skeumorphic. There's an entire
+subculture of designers dedicated to ridiculing poorly though through instances
+of this.
+
+Time
+====
+
+My time is limited; the more time it takes me to tell the computer exactly how
+to do what I want it to do, the less I can accomplish.
+
+
+
+Utility, the Value of
+=====================
+
+Writing a novel for people to use, for those who will use it. Thinking ahead and
+planning what they will see and experience. No one path through an API like a
+novel. But not choose your own adventure either. Exponentially many ways of
+using. More like multiverse.
+
+An "improving book" like Jeeves is always reading. Horatio Alger.
+
 
 
 
