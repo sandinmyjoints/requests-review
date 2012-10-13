@@ -206,6 +206,24 @@ over time, unless one continually uses curl.
 Doing this by hand over and over again can feel tedious, exaggerated, overly
 verbose, not worth the return on effort. The value is the developer's time.
 
+curl is cryptic dense poetry. Not sure who. Thought of GMH but not sure about
+that. Open to ideas.
+
+
+
+
+Here's a terrible analogy, but it's the best I can do: this is kind of like if,
+in a world where no one spoke English, a book was written that explained in detail
+all the rules of English (in some other language, but really the analogy would
+be better if it existed in another medium entirely, like if the rules of English
+could be described by a system of smells): a few people would labor to
+understand the book, and reduce it to smaller more useful themed bits that the
+rest of us could use.
+
+
+When Facebook gets your Instagram photos, the two computers are
+   communicating thanks to APIs that were understood by human programmers who
+   used that understanding to program the computers to talk to each other.
 
 Skipping Over
 =============

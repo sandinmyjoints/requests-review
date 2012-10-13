@@ -7,7 +7,7 @@ by Kenneth Reitz
 
 Reviewed by William John Bert
 
-This is a review of "Requests" by Kenneth Reitz. Requests is not a novel or
+This is a review of Requests by Kenneth Reitz. Requests is not a novel or
 memoir or book of poetry. It is a work of computer programming.
 
 This may not be what you signed up for when you subscribed to Diagram, or
@@ -15,25 +15,27 @@ visited Diagram's website and clicked on this link. You may be thinking, "I'm
 not a programmer. Why would I care?" 
 
 I'm a programmer, and a writer, and I think that there are interesting
-affinities between programming and creative writing. A lot of people think
-programming is about as far from creativity as you can get. Typing away at a
-machine without a soul. Obeying rules. Math. Nerds.
+affinities between programming and creative writing. Some people think
+programming is pretty far from creativity. Typing away at a machine without a
+soul. Obeying rules. Math. Logic. Nerds. [#]_
 
-I think it's more complicated than that. More interesting. (Of course, I'm
-biased.) So I'm going to try to find out what those affinities, but I won't shy
-away from difference. I'll do my best to explain what I'm talking about without
-getting too technical or bogged down in details. I hope that, in the spirit of
-experiment, you'll join me.
+I think it's more complicated than that, and more interesting. (Of course, I'm
+biased.) I'm going to look for those affinities while analyzing a piece of
+software I use frequently. I'll do my best to explain what I'm talking about
+without getting too technical or bogged down in details. I hope that, in the
+spirit of experiment, you'll join me.
 
 Requests
 --------
 
-Requests is a tool that Reitz made for other programmers. He thinks could make
-other people's lives easier, could enable other people to their work better,
-faster, easier, and therefore do better work.
+Requests is a tool for programming. It is designed to solve a problem.
 
-So right away, we see that a tool is different from a work of art. Requests is
-both a work and a way to make more work better.
+So right away, we see that a tool is different from a work of art: functional,
+purposeful, goal-driven. No one calls a poem or novel a tool. And I can't define
+what art is, but I think it's fair to say that art doesn't set out to solve
+problems. It's supposed to exist in and of itself, to provide an experience.
+
+Requests is both a work and a way to make more work better.
 
 But let's step back. What is a tool for programming? What does that mean? How
 could it bear resemblance to creative writing?
@@ -43,50 +45,60 @@ The Problem
 
 Programmers (or software engineers, coders, or hackers--we call ourselves lots
 of things) are in a constant battle against complexity. Computers always do
-precisely and only just what you tell them (take my word for it, despite the
-frustrations Microsoft Word cause you!), you must often spell in excruciating
-detail exactly what you want them to do. There are millions and millions of
-possibilities of what to do. As humans, evolved beings, we filter out all these
-possibilities. Computers don't do that. We have to do tell them exactly what to
-do, which choices to make. If we choose wrong, they do what we told them to do:
-the wrong thing.
+precisely and only just what you tell them (frustrations with Microsoft Word
+notwithstanding), and there are a staggering number of things they can do, which
+means that we programmers must spell out in excruciating detail exactly what we
+want them to do.
 
-Infinite possibilities--now there's an affinity with natural language. The
-difference is, with natural language, we've had lots of time to deal with
-it. Our brains have evolved pockets that just do languagey stuff.
+To manage that kind of complexity, we have rules.
+
+As humans, evolved beings, we unconsciously filter the staggering possibilities
+available to us . Human beings come with some built in rules (eat when hungry),
+and easily learn more (don't touch hot stoves). Computers don't. We have to do
+tell them exactly what to do, which choices to make. If we choose wrong, they do
+what we told them to do: the wrong thing. Programming can be viewed as an effort
+to build up sets of rules so as to direct the computer's action in a useful
+direction, to do something helpful.
+
+Staggering possibilities managed by rules--there's an affinity with natural
+language. The difference is, with natural language, we've had lots of time to
+deal with it. Our brains have evolved pockets that just do languagey stuff.
 
 When it comes to programming, we're just getting started. Our brains need help.
 
-What's an API?
---------------
+Enter the API
+-------------
 
-To help others use Requests, Reitz did a lot of programming and put together an
-API ("application program interface," but everyone just says "API"). APIs are
-how programmers tell other programmers how to use what they've made [#]_. It
+If programming as an enterprise can be thought of as generating rules to make
+computers do useful things, then Requests is a batch of rules that Reitz put
+together to do something useful. To help others use Requests, Reitz put together
+an API ("application program interface," but everyone just says "API"). APIs are
+how programmers tell other programmers how to use what they've made. It
 describes what Requests can do for me, and how I can make it do those things.
 
-An API is inherently textual. It's something people read. Like a manual or a
-specification, but more than that: we also use the term as metonymy for the
+An API is inherently textual, something people read, like a manual or a
+specification, but it's also more than that: it's a metonym for the
 functionality it allows access to, whether an internet service like Twitter or a
 programming library like Requests. It's a description of what the artifact of
 programming can do and how to tell it to do that.
 
-Without APIs, there would be no mashups, no posting your Instagram photos to
-your Twitter feed or what have you.
+APIs are what make it possible to post your Instagram photos to your Facebook
+timeline, checkin on Foursquare from your iPhone, book a flight on United from
+Kayak.com, etc. Without APIs, without a way to share units of functionality with
+each other, each programmer or programming team would be on its own. Everything
+would take much, much longer; each programmer would have to reinvent the wheel.
 
-Without APIs, without a way to share units of functionality with each
-other, each programmer or programming team would be on its own. Everything would
-take much, much longer; each programmer would have to reinvent the wheel.
+Writers almost universally work alone. Programmers usually do, too. Writers
+share their writing with each other, and the world--but not to be reused (though
+influence is OK). Many programmers share their work, too, like what Reitz is
+doing. Essentially, Reitz is saying, I solved this problem in a way I think
+could be useful for you, too, so here you go, have at it. The difference is that
+other people will incorporate Requests into their own work; it is both a work,
+and a way to make other works. It will be, has been, mixed in to the very core
+of many other programs. Its influence, in this way, is direct.
 
-Here are some points of comparison between writing and programming: writers
-almost universally work alone. Programmers usually do, too. Writers share their
-writing with each other--but not to be reused. Though influence is OK. Writers
-don't do mashups. Many programmers share their work with other programmers, like
-what Reitz is doing. Essentially, Reitz is saying, I solved this problem in a
-way I think could be useful for you, too, so here you go, have at it.
-
-That is releasing an API. Releasing an API is an act of communication,
-connection, reaching out, offering something one made to the world at large.
+Making an API is an act of communication, connection, reaching out, offering
+something one made to the world at large.
 
 Here's an interesting bit of jargon: programmers say that somebody is "exposing
 an API." It's an act of confidence, and also vulnerability.
@@ -94,14 +106,14 @@ an API." It's an act of confidence, and also vulnerability.
 APIs for Humans
 ---------------
 
-Humans are not computers [#]_, and vice versa, yet humans want to use computers
-to do some important things better and faster than they can do without them.
-
-Think people have trouble communicating with each other? Try communicating
-with a machine. You have. You do. It gives you trouble.
-
 Reitz's slogan is "APIs for humans." This is an ambitious, worthwhile, and
-impossible goal.
+impossible goal. Humans are not computers [#]_, and vice versa. Yet humans want
+to use computers to do some important things better and faster than they can do
+without them.
+
+Think people of, say, different genders, or different cultures, have trouble
+communicating with each other? Try communicating with a machine. You have. You
+do. It gives you trouble.
 
 A motivation that runs throughout the short history of programming is making it
 easier for humans to tell computers what to do, but ultimately we still end up
@@ -111,11 +123,7 @@ write programs to follow the rules, on the basis of promises that still more
 programmers are doing the same, in the hopes that all will be able to
 communicate to each other.
 
-When Facebook gets your Twitter feed, the two computers are communicating thanks
-to APIs that were understood by human programmers who used that understanding
-to program the computers to talk to each other.
-
-For example, one part of the HTTP 1.1 specification, the spec that defines
+For example, one part of an important specification called HTTP that defines
 how computers talk to each other on the parts of the internet that you and I use
 daily, says:
 
@@ -133,27 +141,18 @@ daily, says:
          GET /pub/WWW/TheProject.html HTTP/1.1
          Host: www.w3.org
 
-Without the full specification in minute detail, all programmers everywhere
+Without a full specification in minute detail, all programmers everywhere
 wouldn't be able to agree on how the thing works, so they would make systems
 that failed because they couldn't talk to each other [#]_; small and
 not-so-small differences would crop up because of ambiguity, or unusual
 situations not anticipated or addressed in the specification, or mistakes, or
-faulty assumptions. (Computers make zero assumptions of their own; they have a
-way of making explicit every single one of yours.)
+faulty assumptions. Computers make zero assumptions of their own; they have a
+way of making explicit every single one of yours.
 
 The HTTP 1.1 specification is hundreds pages of dense imperative technical
 jargon. Most people don't want to invest the time to even read it, let alone
-understand it in full. Someone has to do it.
-
-Here's a terrible analogy, but it's the best I can do: this is kind of like if
-no one were born knowing English, but a book existed that explained in detail
-all the rules of English (in some other language, but really the analogy would
-be better if it existed in another medium entirely, like if the rules of English
-could be described by a system of smells): a few people would labor to
-understand the book, and reduce it to smaller more useful themed bits that the
-rest of us could use.
-
-That is the act of someone translating a spec such as HTTP into working code.
+understand it in full. But someone had to do it; someone had to translate it
+into working code.
 
 Code
 ----
@@ -170,54 +169,64 @@ A snippet of code from a language called Python [#]_ looks like this:
 >>> response = urllib2.urlopen(req)
 >>> response.read()
 
-This retrieves Goodreads' homepage, that is, all the HTML and CSS and JavaScript
-code that produces what you see when you go to www.goodreads.com in your web
-browser [#]_.
+This snippet [#]_ retrieves Goodreads' homepage, that is, all the HTML and CSS
+and JavaScript code that produces what you see when you go to www.goodreads.com
+in your web browser [#]_.
 
 Not for Human Consumption
 -------------------------
 
-What is ``response``? It is a variable, a bit of data that looks something like
-[#]_: ``<addinfourl at 4338521656 whose fp = <socket._fileobject object at
-0x10297ce50>>``
+What is ``response``, in this snippet? It is a variable, a unit of data. If I
+ask Python to describe it, I get something like [#]_ this:
+
+>>> response
+``<addinfourl at 4338521656 whose fp = <socket._fileobject object at 0x10297ce50>>``
 
 What the hell is that?
 
 Expressive Power
 ----------------
 
-Reitz exposes the same thing to us, humans, as:
+Through Requests, Reitz exposes the same thing to us, humans, as:
 
 >>> import requests
 >>> response = requests.get("http://www.goodreads.com")
 
-This ``response`` looks like: ``<Response [200]>``
+This ``response`` looks like
 
-Maybe that doesn't look much better than urllib or curl. It's two lines of code
-instead of four. Not a huge difference, perhaps. And what does 200 mean?
+>>> response
+``<Response [200]>``
 
-To know what 200 means, you have to understand a part of the HTTP 1.1 spec. It
-says that 200 means, "That went OK". Out of the hundreds of pages of HTTP 1.1,
-that is one of first things any programmer learns. The ``<addinfourl at
-4338521656 whose fp = <socket._fileobject object at 0x10297ce50>>`` stuff from
-above? Not nearly as clear. Probably requires some time spent looking around in
-documentation.
+Maybe that doesn't look much better than urllib. The request itself is two lines
+of code instead of four. Not a huge difference, numerically. And what does that
+200 mean?
+
+To know what 200 means, you have to understand a bit of the HTTP 1.1 spec, which
+says that 200 is a status code meaning, "That went OK". Out of the hundreds of
+pages of HTTP 1.1, that is one of first things any webq programmer learns.
+
+The ``<addinfourl at 4338521656 whose fp = <socket._fileobject object at
+0x10297ce50>>`` stuff from urllib? Clear as mud. ``fp`` almost certainly means
+file pointer, and a socket is a low-level abstraction for how computers talk to
+each other, but to really parse this response would require me to spend some
+time spent looking around in documentation.
+
+That's not now how I want to spend my time.
 
 Natural language, as you probably know, offers tremendous expressive power: we
-find it hard to conceive of thoughts that we can't express in it.
+find it hard to conceive of thoughts that we can't express in it. 
 
-``request.get`` is, say, Hemingway: The fish tasted excellent. It's Strunk and
-White: say what you mean as plainly as possible.
+``request.get`` is, say, Hemingway, or Strunk and White: say what you mean as
+plainly as possible. Declarative. Terse.
 
 urllib2's jumble is verbose, technically correct academic English, or legalese:
-heretofore, whereas, it is wanted, etc
+heretofore, whereas, it is wanted, etc. Its API is full of generally unhelpful
+abstractions with names such as ``OpenerDirector`` and
+``HTTPPasswordMgrWithDefaultRealm``. [#]_
 
-curl is cryptic dense poetry. Not sure who. Thought of GMH but not sure about
-that. Open to ideas.
-
-We might say Requests has more expressive power than urllib2. We might not.
-
-There is less friction between what I want to do with requests than urllib2.
+The two are equivalent in functionality, but they have very different levels of
+abstraction. We might say that because of its higher level of abstraction,
+Requests has more expressive power than urllib2.
 
 What it's like to work with a bad API
 -------------------------------------
@@ -279,7 +288,9 @@ This is a fundamental difference between the forms.
 When Austen begins, "It is a truth universally acknowledged...", we know that
 what she is saying is not simply that she has identified a universal
 truth. There is subtext about how different people want different things, and a
-comment on the relative power of men and women in her time.
+comment on the relative power of men and women in her time. There is a richness
+that rewards repeated reading, with readings as varied as the number of people
+who read it.
 
 When I type,
 
@@ -341,16 +352,15 @@ writing, but it has some affinities with such.
 Footnotes
 ---------
 
-.. [#] Confusingly, API is also a term used to describe how computers talk to
-   each other. It's kind of an umbrella term to express the idea of how to
-   interact with a system.
+.. [#] This is a gross generalization, of course; a lot of creative people think
+   otherwise.
 
 .. [#] Though they used to be; see: http://en.wikipedia.org/wiki/Human_computer
 
 .. [#] It's a miracle to me that they do; imagine trying to sync up millions of
    people, some smart, some not so smart, some opinionated, some
    indifferent. HTTP is successful where many, many other attempts at protocols
-   have failed.
+   have failed. 
 
 .. [#] As in Monty Python, not the snake genus.
 
@@ -376,6 +386,11 @@ Footnotes
 
 .. [#] You would see the same code if you view source in your browser. In most
    browsers, that's something you can do by looking under the "View" menu.
+
+.. [#] These names are strikingly similar to the kinds of names that are common
+   in another programming language you may have heard of, Java. Why that is is a
+   whole other discussion that gets into very different philosophies about
+   programming languages.
 
 .. [#] I say "something like" because the exact numbers will vary on different
    computers and at different times of execution.
