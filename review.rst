@@ -321,6 +321,13 @@ When I type,
   session = requests.Session()
   session.post(host+url, data=data)
 
+I am naming my variables clearly, according to what data they hold. I am
+structuring the code in a way that indicates the flow of execution. Requests
+helps me here: the final two lines that create a new session correspond to how I
+think of creating a session: create an object that represents the session, then
+start the session with the remote computer via HTTP. The equivalent in urllib2
+would be much messier and more verbose.
+
 I truly want future readers--myself and others--to understand exactly what that
 code is doing, with no ambiguities. And there will be future readers. I'll be
 re-reading it in six months when I want to add a new feature in another part of
