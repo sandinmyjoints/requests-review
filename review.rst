@@ -169,7 +169,7 @@ A snippet of code from a language called Python [#]_ looks like this:
 >>> response = urllib2.urlopen(req)
 >>> response.read()
 
-This snippet [#]_ uses Python's standard ``urllib2`` library to retrieve Goodreads'
+This snippet [#]_ uses Python's standard urllib2 library to retrieve Goodreads'
 homepage, that is, all the HTML and CSS and JavaScript code that produces what
 you see when you go to www.goodreads.com in your web browser [#]_.
 
@@ -196,9 +196,9 @@ Through Requests, Reitz exposes the same thing to us, humans, as:
 This ``response`` looks like:
 
 >>> response
-``<Response [200]>``
+<Response [200]>
 
-Maybe that doesn't look much better than what we saw from ``urllib2``. The request
+Maybe that doesn't look much better than what we saw from urllib2. The request
 itself is two lines of code instead of four. Not a huge difference,
 numerically. And what does that 200 mean?
 
@@ -219,14 +219,14 @@ find it hard to conceive of thoughts that we can't express in it.
 ``requests.get`` is, say, Hemingway, or Strunk and
 White. Declarative. Terse. Say what you mean as plainly as possible. 
 
-``urllib2``'s jumble is verbose, jargon, like legalese: heretofore, whereas, the
+urllib2's jumble is verbose, jargon, like legalese: heretofore, whereas, the
 party of the first part, etc. Its API is a menagerie of abstractions with names
 such as ``OpenerDirector`` and ``HTTPPasswordMgrWithDefaultRealm``. [#]_
 
 These two ways of getting a web page are equivalent in functionality, but they
 operate at very different levels of abstraction. We might say that because of
 its higher level of abstraction, Requests has more expressive power than
-``urllib2``.
+urllib2.
 
 What it's like to work with a bad API
 -------------------------------------
@@ -264,10 +264,10 @@ online experiences, whether photos or likes or tweets or blog posts or anything
 else.
 
 Requests handles all four with aplomb, exposing them through a clean interface
-that maps to how my mind thinks. ``urllib2`` does not. I don't mean to beat up
-on ``urllib2``; it's older and was designed for a time when the internet was
+that maps to how my mind thinks. urllib2 does not. I don't mean to beat up
+on urllib2; it's older and was designed for a time when the internet was
 simpler and functioned differently. The point I want to make is this: Requests
-and ``urllib2`` were written using the same language, Python, and technically
+and urllib2 were written using the same language, Python, and technically
 have nearly the same capabilities, but Requests was crafted in a way that
 manages and abstracts away unnecessary details, the way a sculpture removes rock
 until something meaningful remains. Requests is successful because it makes
@@ -387,12 +387,13 @@ Footnotes
 .. [#] What does this all mean?
 
    Three greater-than signs (>>>) is called a prompt, as in Python is prompting
-   me to give it something to do. So when I type:
+   me to give it something to do. The rest of the line after it is what I
+   type. So this:
 
    >>> requests.get("www.goodreads.com")
    <Result [200]>
 
-   This is the little dialog taking place:
+   is really this little dialog:
 
    Python: I'm ready! Give me something to do.
 
