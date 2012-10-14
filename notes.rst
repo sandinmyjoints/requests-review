@@ -221,6 +221,27 @@ understand the book, and reduce it to smaller more useful themed bits that the
 rest of us could use.
 
 
+
+It strives to be explicit, complete, clear. The goal is to express oneself in
+completion of a task. I want coherence, consistency, low friction between my
+mind and the computer. I want to think in the way that I think naturally. I
+don't think in terms of urlopeners and urlencoding. I think, I want to look at a
+webpage, or get some data. Maybe I'll send some parameters.
+
+
+
+I think this is what it comes down to. When I write or program, I know I'm
+communicating with other minds. I inhabit them; I bridge the gap between
+them. It makes me feel strongly. It makes me feel not alone.
+
+I can feel my mind stretching when I consume a well put-together API or book--it
+broadens the scope of what I know about the universe, about what it
+possible.
+
+
+
+
+
 When Facebook gets your Instagram photos, the two computers are
    communicating thanks to APIs that were understood by human programmers who
    used that understanding to program the computers to talk to each other.

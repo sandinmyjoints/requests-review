@@ -12,7 +12,7 @@ memoir or book of poetry. It is a work of computer programming.
 
 This may not be what you signed up for when you subscribed to Diagram, or
 visited Diagram's website and clicked on this link. You may be thinking, "I'm
-not a programmer. Why would I care?" 
+not a programmer. Why would I care?"
 
 I'm a programmer, and a writer, and I think that there are interesting
 affinities between programming and creative writing. Some people think
@@ -158,26 +158,27 @@ Code
 ----
 
 Code is the term I will use for what programmers write. (In this sense, it's
-always a collective noun: code, never codes.) Code is as varied as
-other forms of human symbolic communication (like, say, writing), and it comes
-in a plethora of languages, each of which brings its own stylistic choices.
+always a collective noun: code, never codes.) Code as varied as other forms of
+human symbolic communication (like, say, writing), and it comes in a plethora of
+languages, each of which brings its own stylistic choices.
 
 A snippet of code from a language called Python [#]_ looks like this:
 
->>> import urllib, urllib2
+>>> import urllib2
 >>> req = urllib2.Request('http://www.goodreads.com')
 >>> response = urllib2.urlopen(req)
 >>> response.read()
 
-This snippet [#]_ retrieves Goodreads' homepage, that is, all the HTML and CSS
-and JavaScript code that produces what you see when you go to www.goodreads.com
-in your web browser [#]_.
+This snippet [#]_ uses Python's standard ``urllib2`` library to retrieve Goodreads'
+homepage, that is, all the HTML and CSS and JavaScript code that produces what
+you see when you go to www.goodreads.com in your web browser [#]_.
 
 Not for Human Consumption
 -------------------------
 
-What is ``response``, in this snippet? It is a variable, a unit of data. If I
-ask Python to describe it, I get something like [#]_ this:
+What is ``response``, in this snippet? It is a type of variable called an
+object; it represents data. If I ask Python to describe it, I get
+something like [#]_ this:
 
 >>> response
 ``<addinfourl at 4338521656 whose fp = <socket._fileobject object at 0x10297ce50>>``
@@ -192,105 +193,118 @@ Through Requests, Reitz exposes the same thing to us, humans, as:
 >>> import requests
 >>> response = requests.get("http://www.goodreads.com")
 
-This ``response`` looks like
+This ``response`` looks like:
 
 >>> response
 ``<Response [200]>``
 
-Maybe that doesn't look much better than urllib. The request itself is two lines
-of code instead of four. Not a huge difference, numerically. And what does that
-200 mean?
+Maybe that doesn't look much better than what we saw from ``urllib2``. The request
+itself is two lines of code instead of four. Not a huge difference,
+numerically. And what does that 200 mean?
 
 To know what 200 means, you have to understand a bit of the HTTP 1.1 spec, which
 says that 200 is a status code meaning, "That went OK". Out of the hundreds of
-pages of HTTP 1.1, that is one of first things any webq programmer learns.
+pages of HTTP 1.1, that is one of first things any web programmer learns.
 
 The ``<addinfourl at 4338521656 whose fp = <socket._fileobject object at
-0x10297ce50>>`` stuff from urllib? Clear as mud. ``fp`` almost certainly means
-file pointer, and a socket is a low-level abstraction for how computers talk to
-each other, but to really parse this response would require me to spend some
-time spent looking around in documentation.
-
-That's not now how I want to spend my time.
+0x10297ce50>>`` stuff from urllib? Clear as mud. ``fp`` probably means file
+pointer, and a socket is a low-level abstraction for how computers talk to each
+other, but to parse and really understand this response would require me to
+spend some time spent looking around in documentation. I just wanted to get a
+web page.
 
 Natural language, as you probably know, offers tremendous expressive power: we
-find it hard to conceive of thoughts that we can't express in it. 
+find it hard to conceive of thoughts that we can't express in it.
 
-``request.get`` is, say, Hemingway, or Strunk and White: say what you mean as
-plainly as possible. Declarative. Terse.
+``requests.get`` is, say, Hemingway, or Strunk and
+White. Declarative. Terse. Say what you mean as plainly as possible. 
 
-urllib2's jumble is verbose, technically correct academic English, or legalese:
-heretofore, whereas, it is wanted, etc. Its API is full of generally unhelpful
-abstractions with names such as ``OpenerDirector`` and
-``HTTPPasswordMgrWithDefaultRealm``. [#]_
+``urllib2``'s jumble is verbose, jargon, like legalese: heretofore, whereas, the
+party of the first part, etc. Its API is a menagerie of abstractions with names
+such as ``OpenerDirector`` and ``HTTPPasswordMgrWithDefaultRealm``. [#]_
 
-The two are equivalent in functionality, but they have very different levels of
-abstraction. We might say that because of its higher level of abstraction,
-Requests has more expressive power than urllib2.
+These two ways of getting a web page are equivalent in functionality, but they
+operate at very different levels of abstraction. We might say that because of
+its higher level of abstraction, Requests has more expressive power than
+``urllib2``.
 
 What it's like to work with a bad API
 -------------------------------------
 
-If that API is a mismatch with your way of thinking, you get frustrated,
-annoyed, bitter. You keep saying, It should do this, or HOw can it not do that?
-or What were they thinking? You feel bogged down. You have to look up every
-little thing. Nothing comes easy. You get a headache. You curse. You may bite or
-click your nails, or maniacally tap your foot. You want to be doing something
-else. 
+You type a lot. You get annoyed. You say of whoever created the API, What were
+they thinking?  You feel bogged down. You feel like you're typing too much. You
+have to look up every little thing. Nothing comes easy. You get a headache. You
+see a lot of code on the screen and it doesn't seem to do that much. You
+curse. You may bite or click your nails, or maniacally tap your foot. You want
+to be doing something else.
 
-What it's like to work with a good API
---------------------------------------
+What it's like to work with a really good API
+---------------------------------------------
 
-It's more than if DFW or Lori Moore or John Ashbery released a notebook of
-exercises and prompts. It's as if they released part of their brain, so that you
-too could run your thoughts threw it.
+It's more than if DFW or Lori Moore or John Ashbery published a notebook of
+exercises and prompts; it's as if they published part of their brain, so that
+you too can run your thoughts threw it, and have them upgraded. As you figure
+out how to do what you set out to do, you realize other things that would also
+be cool to do, and you find that the API has ways to do them, too! You think the
+way someone else thought, and understand their thinking on a deep level. You
+have a sense that we are all in this together, we're not so different.
 
-You think the way someone else thought. You have a sense that we are all in this
-together, we're not so different.
+The Four Verbs
+--------------
 
-Requests exposes the four verbs of HTTP: get, post, put, and delete. Those four
-actions make up the vast majority of your use of the internet. They are
-responsible for creating, retrieving, updating, and deleting the representations
-of your online experience. Requests makes them easier to use than urllib2.
+The examples I've shown so far only scratch the surface; things get more
+complicated when you want to send data, maintain a session using a cookie,
+authenticate to prove your identity--all of which are necessary to do something
+interesting like share a photo, or tweet.
 
-What I have shown only scratches the surface; I'm not going to show more because
-the background needed to explain what it is too much.
+The four verbs defined the HTTP spec--the four verbs of the internet--are get,
+post, put, and delete. They are responsible for, respectively, retrieving,
+creating, updating, and deleting the digital representations that constitute our
+online experiences, whether photos or likes or tweets or blog posts or anything
+else.
+
+Requests handles all four with aplomb, exposing them through a clean interface
+that maps to how my mind thinks. ``urllib2`` does not. I don't mean to beat up
+on ``urllib2``; it's older and was designed for a time when the internet was
+simpler and functioned differently. The point I want to make is this: Requests
+and ``urllib2`` were written using the same language, Python, and technically
+have nearly the same capabilities, but Requests was crafted in a way that
+manages and abstracts away unnecessary details, the way a sculpture removes rock
+until something meaningful remains. Requests is successful because it makes
+something quite messy in the details look simple and easy, the way a novelist or
+poet chooses detail to bring shape to an otherwise messy and undifferentiated
+reality.
 
 Dealing with Reality
 --------------------
 
-Programming strives to be subtext-free. We are damn earnest. The code is tricky
+Programmers strive to be subtext-free. We are damn earnest. The code is tricky
 enough. It is always trying to trip us up, making us question ourselves, driving
-us crazy. Miss a comma and spend hours trying to find it. The computer forgives
-nothing.
-
-It strives to be explicit, complete, clear. The goal is to express oneself in
-completion of a task. I want coherence, consistency, low friction between my
-mind and the computer. I want to think in the way that I think naturally. I
-don't think in terms of urlopeners and urlencoding. I think, I want to look at a
-webpage, or get some data. Maybe I'll send some parameters.
-
-Literature, creative writing, has subtext. It strives to create an effect in an
-of itself, multiple readings, shades of meaning, getting beneath what is said to
-get to reality.
-
-Programmers strive to make their own clean reality. Every program is its own
-little universe, perhaps mixing in other universes to make it.
+us crazy. Miss a comma or closing brace, and spend hours trying to find your
+mistake. The computer forgives nothing. Good programmers deal with this by
+making their own reality as clean as possible. 
 
 If I write an app that tracks the books, you've read, you've either read a book
 or not, or perhaps you are currently reading it. In the app's universe, there's
 no "I read a third of it, then put it down for a while," or "It's sitting in the
 bathroom and I pick it up now and then," or "I stole it from a friend and now
-Vanessa's borrowing it, I think."
+Vanessa's borrowing it, I think." If I try to come up with a system to
+programmatically encode every possible state of any person's relationship to
+their book, I'll never get past this work to finish the app. This is how
+programmers deal with reality: by cleaning it up.
 
-This is a fundamental difference between the forms.
+When Austen begins, "It is a truth universally acknowledged, that a single man
+in possession of a good fortune must be in want of a wife," we know that what
+she is not simply stating a universal truth that she has identified. The
+sentence comes with subtext: the truth is universal in the minds of some people,
+but not others, an oxymoron, which the sentence's passive voice
+reinforces. There is also commentary on the relative power of men and women in
+her time. There is a richness that demands and rewards repeated reading,
+bringing readings as varied as the number of people who read it.
 
-When Austen begins, "It is a truth universally acknowledged...", we know that
-what she is saying is not simply that she has identified a universal
-truth. There is subtext about how different people want different things, and a
-comment on the relative power of men and women in her time. There is a richness
-that rewards repeated reading, with readings as varied as the number of people
-who read it.
+Creative writing, literature, thrives on subtext, on creating shades of meaning
+and multiple readings. Ambiguity and ellision and irony are techniques for
+dealing with the messiness of reality.
 
 When I type,
 
@@ -308,46 +322,53 @@ When I type,
   session.post(host+url, data=data)
 
 I truly want future readers--myself and others--to understand exactly what that
-code is doing, with no ambiguities.
+code is doing, with no ambiguities. And there will be future readers. I'll be
+re-reading it in six months when I want to add a new feature in another part of
+the program and it breaks something here and I have to figure out why. Code,
+like literature, is read far more than it is written.
 
 Theory of Mind
 --------------
 
-Programmers have to inhabit other minds: other programmers (target audience),
-users, developers of the libraries and APIs they're using; the computer itself.
+Writers and programmers inhabit other minds.
 
-These are characters.
+Writers, of course, inhabit the minds of their characters, and of an implicit
+reader of their work.
 
-Writers have to inhabit the minds of their characters. And the audience.
+Programmers inhabit the minds of users. In Reitz's case, these are other
+programmers (as opposed to, say, the programmers of Google Chrome, which is used
+by non-programmers). Programmers can be said to inhabit mind of the computer
+itself. 
 
-A sensation, a feeling, a sense I get in common from both writing and
-programming: a sense of communing, of knowing what someone else, another human
-being, thought and felt on a deep level. Empathy? Sharing a brain experience.
+Programmer jargon has a word for understanding something with "intimate and
+exhaustive knowledge": grok [#]_. It's from the language of the Martians in
+Robert Heinlein's *Stranger in a Strange Land*, in which it means literally "to
+drink" and metaphorically "to be one with."
 
-In a novel or poem, you've been led to it by a succession of images and literary
-devices and experiences and revelations.
+In a novel or poem, you've been led to understanding and impression by a
+succession of images and literary devices and experiences and revelations. In
+programming, you are led to understanding by encountering the same problems,
+the same ways of thinking about those problems and organizing them and
+'grokking' them and devising a solution.
 
-In programming, you've encountered the same problems, the same ways of thinking
-about those problems and organizing them and 'grokking' them and grokking a
-solution.
+Reading, writing, programming: solitary experiences that can lead to intense
+feelings of other-knowledge, by virtue of shared mind-experience.
 
-Reading, writing, programming: solitary experiences that lead to intense
-feelings of community, by virtue of shared mind-experience,
+This habitation of minds outside my own is part of what draws me to both these
+pursuits. It is a challenge. It broadens my world. Thinking of others, as others
+think, anticipate their needs and wants and questions, helps me escape myself
+and gain perspective. It's invigorating! When I am programming or writing well,
+in the flow, I experience a feeling of communing, of knowing what someone else,
+another human being, thought or thinks or will think, felt or feels or will
+feel, on a deep level. I feel part of something larger than myself.
 
-I think this is what it comes down to. When I write or program, I know I'm
-communicating with other minds. I inhabit them; I bridge the gap between
-them. It's invigorating. It makes me feel strongly. It makes me feel not alone.
-
-Done well, it is a work of minds mixing, sharing, letting each other in. Of
-making sense of the world, existence. This is too grandiose, but that is because
-I'm talking about the effect in sum. In parts it is not always that way, but
-then at specific moments sometimes it is. I can feel my mind stretching when I
-consume a well put together API or book--it broadens the scope of what I know
-about the universe, about what it possible. 
-
-Requests is a fine library with a well thought out API that I know Reitz put
-thought and effort into. It solves problems. It is not a work of creative
-writing, but it has some affinities with such.
+Done well, writing and programming can produce works of minds mixing, sharing,
+letting each other in. Of making sense of the world, existence. This is too
+grandiose, but that is because I'm talking about the effect in sum. In parts it
+is not always that way, but then at specific moments sometimes it is. When I use
+Requests, a fine library with a well thought-out API that Reitz clearly put
+thought and effort into. He has crafted an experience that an author could be
+proud of.
 
 Footnotes
 ---------
@@ -360,7 +381,7 @@ Footnotes
 .. [#] It's a miracle to me that they do; imagine trying to sync up millions of
    people, some smart, some not so smart, some opinionated, some
    indifferent. HTTP is successful where many, many other attempts at protocols
-   have failed. 
+   have failed.
 
 .. [#] As in Monty Python, not the snake genus.
 
@@ -369,7 +390,7 @@ Footnotes
    Three greater-than signs (>>>) is called a prompt, as in Python is prompting
    me to give it something to do. So when I type:
 
-   >>> request.get("www.goodreads.com")
+   >>> requests.get("www.goodreads.com")
    <Result [200]>
 
    This is the little dialog taking place:
@@ -394,3 +415,6 @@ Footnotes
 
 .. [#] I say "something like" because the exact numbers will vary on different
    computers and at different times of execution.
+
+.. [#] The definition is from The Jargon File, a reference of programming jargon
+   and lore: http://www.catb.org/jargon/html/G/grok.html    
