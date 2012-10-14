@@ -327,6 +327,26 @@ re-reading it in six months when I want to add a new feature in another part of
 the program and it breaks something here and I have to figure out why. Code,
 like literature, is read far more than it is written.
 
+Grok
+----
+
+Traditional programmer jargon has a word for understanding something with
+"intimate and exhaustive knowledge": grok [#]_. It's from the language of the
+Martians in Robert Heinlein's *Stranger in a Strange Land*, in which it means
+literally "to drink" and metaphorically "to be one with."
+
+In a novel or poem, you've been led to understanding and impression by a
+succession of images and literary devices and experiences and revelations. In
+programming, you are led to understanding by encountering the same problems,
+the same ways of thinking about those problems and organizing them and
+'grokking' them and devising a solution.
+
+Reitz groks HTTP and Python well, better than I ever will, as Austen grokked
+marriage and relationship power dynamics better than I ever will. Through their
+works, I benefit from their experience of the world. In my own work of
+programming and writing, I strive to match the understanding that they
+achieved.
+
 Theory of Mind
 --------------
 
@@ -340,20 +360,6 @@ programmers (as opposed to, say, the programmers of Google Chrome, which is used
 by non-programmers). Programmers can be said to inhabit mind of the computer
 itself. 
 
-Programmer jargon has a word for understanding something with "intimate and
-exhaustive knowledge": grok [#]_. It's from the language of the Martians in
-Robert Heinlein's *Stranger in a Strange Land*, in which it means literally "to
-drink" and metaphorically "to be one with."
-
-In a novel or poem, you've been led to understanding and impression by a
-succession of images and literary devices and experiences and revelations. In
-programming, you are led to understanding by encountering the same problems,
-the same ways of thinking about those problems and organizing them and
-'grokking' them and devising a solution.
-
-Reading, writing, programming: solitary experiences that can lead to intense
-feelings of other-knowledge, by virtue of shared mind-experience.
-
 This habitation of minds outside my own is part of what draws me to both these
 pursuits. It is a challenge. It broadens my world. Thinking of others, as others
 think, anticipate their needs and wants and questions, helps me escape myself
@@ -362,13 +368,6 @@ in the flow, I experience a feeling of communing, of knowing what someone else,
 another human being, thought or thinks or will think, felt or feels or will
 feel, on a deep level. I feel part of something larger than myself.
 
-Done well, writing and programming can produce works of minds mixing, sharing,
-letting each other in. Of making sense of the world, existence. This is too
-grandiose, but that is because I'm talking about the effect in sum. In parts it
-is not always that way, but then at specific moments sometimes it is. When I use
-Requests, a fine library with a well thought-out API that Reitz clearly put
-thought and effort into. He has crafted an experience that an author could be
-proud of.
 
 Footnotes
 ---------

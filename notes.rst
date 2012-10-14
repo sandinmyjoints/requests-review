@@ -242,6 +242,28 @@ possible.
 
 
 
+Requests is
+successful because it makes something quite messy in the details look simple and
+easy.
+
+
+
+Done well, writing and programming can produce works of minds mixing, sharing,
+letting each other in. Of making sense of the world, existence. This is too
+grandiose, but that is because I'm talking about the effect in sum. In parts it
+is not always that way, but then at specific moments sometimes it is. When I use
+Requests, a fine library with a well thought-out API that Reitz clearly put
+thought and effort into. He has crafted an experience that an author could be
+proud of.
+
+
+Reading, writing, programming: solitary experiences that can lead to intense
+feelings of other-knowledge, by virtue of shared mind-experience.
+
+
+
+
+
 When Facebook gets your Instagram photos, the two computers are
    communicating thanks to APIs that were understood by human programmers who
    used that understanding to program the computers to talk to each other.
