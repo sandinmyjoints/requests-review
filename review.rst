@@ -5,13 +5,16 @@ Requests 0.14.0
 by Kenneth Reitz
 ----------------
 
+A Review for Curious Readers of DIAGRAM
+=======================================
+
 Reviewed by William John Bert
 
 This is a review of Requests by Kenneth Reitz. Requests is not a novel or
 memoir or book of poetry. It is a work of computer programming.
 
-This may not be what you signed up for when you subscribed to Diagram, or
-visited Diagram's website and clicked on this link. You may be thinking, "I'm
+This may not be what you signed up for when you subscribed to DIAGRAM, or
+visited DIAGRAM's website and clicked on this link. You may be thinking, "I'm
 not a programmer. Why would I care?"
 
 I'm a programmer, and a writer, and I think that there are interesting
@@ -22,7 +25,7 @@ soul. Obeying rules. Math. Logic. Nerds. [#]_
 I think it's more complicated than that, and more interesting. (Of course, I'm
 biased.) I'm going to look for those affinities while analyzing a piece of
 software I use frequently. I'll do my best to explain what I'm talking about
-without getting too technical or bogged down in details. I hope that, in the
+without getting overly technical or bogged down in details. I hope that, in the
 spirit of experiment, you'll join me.
 
 Requests
@@ -84,7 +87,7 @@ programming can do and how to tell it to do that.
 
 APIs are what make it possible to post your Instagram photos to your Facebook
 timeline, checkin on Foursquare from your iPhone, book a flight on United from
-Kayak.com, etc. Without APIs, without a way to share units of functionality with
+Kayak, etc. Without APIs, without a way to share units of functionality with
 each other, each programmer or programming team would be on its own. Everything
 would take much, much longer; each programmer would have to reinvent the wheel.
 
@@ -101,7 +104,7 @@ Making an API is an act of communication, connection, reaching out, offering
 something one made to the world at large.
 
 Here's an interesting bit of jargon: programmers say that somebody is "exposing
-an API." It's an act of confidence, and also vulnerability.
+an API." It's an act of confidence, but also vulnerability.
 
 APIs for Humans
 ---------------
@@ -117,13 +120,13 @@ do. It gives you trouble.
 
 A motivation that runs throughout the short history of programming is making it
 easier for humans to tell computers what to do, but ultimately we still end up
-with rules written by humans for humans to read describing how computers will
+with rules written by humans for humans to read that describe how computers will
 talk to other computers. Then humans other than the ones who wrote those rules
 write programs to follow the rules, on the basis of promises that still more
 programmers are doing the same, in the hopes that all will be able to
 communicate to each other.
 
-For example, one part of an important specification called HTTP that defines
+For example, one part of an important specification called HTTP, which defines
 how computers talk to each other on the parts of the internet that you and I use
 daily, says:
 
@@ -158,9 +161,9 @@ Code
 ----
 
 Code is the term I will use for what programmers write. (In this sense, it's
-always a collective noun: code, never codes.) Code as varied as other forms of
-human symbolic communication (like, say, writing), and it comes in a plethora of
-languages, each of which brings its own stylistic choices.
+always a collective noun: code, never codes.) Code is as varied as other forms
+of human symbolic communication (like, say, writing), and it comes in a plethora
+of languages, each of which brings its own stylistic choices.
 
 A snippet of code from a language called Python [#]_ looks like this:
 
@@ -177,18 +180,18 @@ Not for Human Consumption
 -------------------------
 
 What is ``response``, in this snippet? It is a type of variable called an
-object; it represents data. If I ask Python to describe it, I get
-something like [#]_ this:
+object; it represents data stored in the computer's memory. If I ask Python to
+describe it, I get something like [#]_ this:
 
 >>> response
-``<addinfourl at 4338521656 whose fp = <socket._fileobject object at 0x10297ce50>>``
+<addinfourl at 4338521656 whose fp = <socket._fileobject object at 0x10297ce50>>
 
 What the hell is that?
 
 Expressive Power
 ----------------
 
-Through Requests, Reitz exposes the same thing to us, humans, as:
+Through Requests, Reitz exposes the same thing as:
 
 >>> import requests
 >>> response = requests.get("http://www.goodreads.com")
@@ -198,8 +201,8 @@ This ``response`` looks like:
 >>> response
 <Response [200]>
 
-Maybe that doesn't look much better than what we saw from urllib2. The request
-itself is two lines of code instead of four. Not a huge difference,
+Maybe that doesn't look a whole lot better than what we saw from urllib2. The
+request itself is two lines of code instead of four. Not a huge difference,
 numerically. And what does that 200 mean?
 
 To know what 200 means, you have to understand a bit of the HTTP 1.1 spec, which
@@ -232,18 +235,17 @@ What it's like to work with a bad API
 -------------------------------------
 
 You type a lot. You get annoyed. You say of whoever created the API, What were
-they thinking?  You feel bogged down. You feel like you're typing too much. You
-have to look up every little thing. Nothing comes easy. You get a headache. You
-see a lot of code on the screen and it doesn't seem to do that much. You
-curse. You may bite or click your nails, or maniacally tap your foot. You want
-to be doing something else.
+they thinking?  You feel bogged down. You have to look up every little
+thing. Nothing comes easy. You get a headache. You see a lot of code on the
+screen and it doesn't seem to do much. You curse. You may bite or click
+your nails, or maniacally tap your foot. You want to be doing something else.
 
 What it's like to work with a really good API
 ---------------------------------------------
 
 It's more than if DFW or Lori Moore or John Ashbery published a notebook of
 exercises and prompts; it's as if they published part of their brain, so that
-you too can run your thoughts threw it, and have them upgraded. As you figure
+you too can run your thoughts through it, and have them upgraded. As you figure
 out how to do what you set out to do, you realize other things that would also
 be cool to do, and you find that the API has ways to do them, too! You think the
 way someone else thought, and understand their thinking on a deep level. You
@@ -253,26 +255,27 @@ The Four Verbs
 --------------
 
 The examples I've shown so far only scratch the surface; things get more
-complicated when you want to send data, maintain a session using a cookie,
-authenticate to prove your identity--all of which are necessary to do something
-interesting like share a photo, or tweet.
+complicated when you want to send data, authenticate to prove your identity,
+maintain a session so that a website knows you're the same person as you move
+from page to page--all of which are necessary to do something interesting like
+share a photo, or tweet.
 
-The four verbs defined the HTTP spec--the four verbs of the internet--are get,
-post, put, and delete. They are responsible for, respectively, retrieving,
+The four verbs defined in the HTTP spec--the four verbs of the internet--are
+get, post, put, and delete. They are responsible for, respectively, retrieving,
 creating, updating, and deleting the digital representations that constitute our
 online experiences, whether photos or likes or tweets or blog posts or anything
 else.
 
 Requests handles all four with aplomb, exposing them through a clean interface
-that maps to how my mind thinks. urllib2 does not. I don't mean to beat up
-on urllib2; it's older and was designed for a time when the internet was
-simpler and functioned differently. The point I want to make is this: Requests
-and urllib2 were written using the same language, Python, and technically
-have nearly the same capabilities, but Requests was crafted in a way that
-manages and abstracts away unnecessary details, the way a sculpture removes rock
-until something meaningful remains. Requests is successful because it makes
-something quite messy in the details look simple and easy, the way a novelist or
-poet chooses detail to bring shape to an otherwise messy and undifferentiated
+that maps to how my mind thinks. urllib2 does not. I don't mean to beat up on
+urllib2; it's older and was designed for a time when the internet was simpler
+and functioned differently. The point I want to make is this: Requests and
+urllib2 were written using the same language, Python, and technically have
+nearly the same capabilities, but Requests was crafted in a way that manages and
+abstracts away unnecessary details, the way a sculpture removes matter until
+something meaningful remains. Requests is successful because it makes something
+quite messy in the details look simple and easy, the way a novelist or poet
+chooses detail to bring shape to an otherwise messy and undifferentiated
 reality.
 
 Dealing with Reality
@@ -284,7 +287,7 @@ us crazy. Miss a comma or closing brace, and spend hours trying to find your
 mistake. The computer forgives nothing. Good programmers deal with this by
 making their own reality as clean as possible. 
 
-If I write an app that tracks the books, you've read, you've either read a book
+If I write an app that tracks the books you've read, you've either read a book
 or not, or perhaps you are currently reading it. In the app's universe, there's
 no "I read a third of it, then put it down for a while," or "It's sitting in the
 bathroom and I pick it up now and then," or "I stole it from a friend and now
@@ -294,13 +297,13 @@ their book, I'll never get past this work to finish the app. This is how
 programmers deal with reality: by cleaning it up.
 
 When Austen begins, "It is a truth universally acknowledged, that a single man
-in possession of a good fortune must be in want of a wife," we know that what
-she is not simply stating a universal truth that she has identified. The
-sentence comes with subtext: the truth is universal in the minds of some people,
-but not others, an oxymoron, which the sentence's passive voice
-reinforces. There is also commentary on the relative power of men and women in
-her time. There is a richness that demands and rewards repeated reading,
-bringing readings as varied as the number of people who read it.
+in possession of a good fortune must be in want of a wife," she is not simply
+stating a universal truth that she has identified. The sentence comes with
+subtext: the truth is universal in the minds of some people, but not others, an
+oxymoron, reinforced by the sentence's lack of an active subject. There is also
+commentary on the relative power of men and women in her time. There is a
+richness that demands and rewards repeated reading, offering readings as varied
+as the number of people who read it.
 
 Creative writing, literature, thrives on subtext, on creating shades of meaning
 and multiple readings. Ambiguity and ellision and irony are techniques for
@@ -344,15 +347,14 @@ literally "to drink" and metaphorically "to be one with."
 
 In a novel or poem, you've been led to understanding and impression by a
 succession of images and literary devices and experiences and revelations. In
-programming, you are led to understanding by encountering the same problems,
-the same ways of thinking about those problems and organizing them and
-'grokking' them and devising a solution.
+programming, you are led to understanding by encountering problems, ways of
+thinking about those problems and organizing them and 'grokking' them and
+devising a solution.
 
 Reitz groks HTTP and Python well, better than I ever will, as Austen grokked
-marriage and relationship power dynamics better than I ever will. Through their
+marriage and power dynamics better than I ever will. Through exposure to their
 works, I benefit from their experience of the world. In my own work of
-programming and writing, I strive to match the understanding that they
-achieved.
+programming and writing, I strive to match the understanding that they achieved.
 
 Theory of Mind
 --------------
@@ -364,12 +366,12 @@ reader of their work.
 
 Programmers inhabit the minds of users. In Reitz's case, these are other
 programmers (as opposed to, say, the programmers of Google Chrome, which is used
-by non-programmers). Programmers can be said to inhabit mind of the computer
-itself. 
+by non-programmers). Programmers might also be said to inhabit mind of the
+computer itself.
 
 This habitation of minds outside my own is part of what draws me to both these
 pursuits. It is a challenge. It broadens my world. Thinking of others, as others
-think, anticipate their needs and wants and questions, helps me escape myself
+think, anticipating their needs and wants and questions, helps me escape myself
 and gain perspective. It's invigorating! When I am programming or writing well,
 in the flow, I experience a feeling of communing, of knowing what someone else,
 another human being, thought or thinks or will think, felt or feels or will
