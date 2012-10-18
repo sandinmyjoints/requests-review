@@ -1,3 +1,10 @@
+=============================
+
+The only thing DIAGRAM readers *might* care about is how programming is like
+this thing they love, writing.
+
+=============================
+
 >>> type(response)
 requests.models.Response
 
