@@ -5,6 +5,11 @@ this thing they love, writing.
 
 =============================
 
+Writing and programming aren't all alike; they differ in how they deal with
+reality. One denies it, the other embraces it. No, that's too simple: one
+filters it, the other splats it all over the place. Good code captures the
+essentials in a way that is both surprising and inevitable.
+
 >>> type(response)
 requests.models.Response
 

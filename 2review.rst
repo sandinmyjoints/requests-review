@@ -182,13 +182,6 @@ identification with a legal briefing. But with a novel, or a good API, the pace
 of meaning accelerates, more closely matching my inner monologue, setting the
 stage for identification.
 
-
-
-Writing and programming aren't all alike; they differ in how they deal with
-reality. One denies it, the other embraces it. No, that's too simple: one
-filters it, the other splats it all over the place. Good code captures the
-essentials in a way that is both surprising and inevitable.
-
 Dealing with Reality
 --------------------
 
@@ -323,13 +316,6 @@ it will be through studying works like *Pride and Prejudice*, and *Requests*.
 Footnotes
 ---------
 
-.. [#] Though they used to be; see: http://en.wikipedia.org/wiki/Human_computer
-
-.. [#] It's a miracle to me that they do; imagine trying to sync up millions of
-   people, some smart, some not so smart, some opinionated, some
-   indifferent. HTTP is successful where many, many other attempts at protocols
-   have failed.
-
 .. [#] As in Monty Python, not the snake genus.
 
 .. [#] What does this all mean?
@@ -353,16 +339,13 @@ Footnotes
    each other examples: this is what I did; this is what I got; if you do the
    same, you should get the same result.
 
-.. [#] You would see the same code if you view source in your browser. In most
-   browsers, that's something you can do by looking under the "View" menu.
+.. [#] I say "something like" because the exact numbers will vary on different
+   computers and at different times of execution.
 
 .. [#] These names are strikingly similar to the kinds of names that are common
    in another programming language you may have heard of, Java. Why that is is a
    whole other discussion that gets into very different philosophies about
    programming languages.
 
-.. [#] I say "something like" because the exact numbers will vary on different
-   computers and at different times of execution.
-
-.. [#] The definition is from The Jargon File, a reference of programming jargon
-   and lore: http://www.catb.org/jargon/html/G/grok.html
+.. [#] This definition is taken from The Jargon File, a reference of programming
+   jargon and lore: http://www.catb.org/jargon/html/G/grok.html
