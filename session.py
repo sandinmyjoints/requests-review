@@ -11,7 +11,7 @@ Write a review.
 """
 
 url = GOODREADS = "http://www.goodreads.com"
-request_token_url = '%s/oauth/request_token/' % url
+request_token_url = '%s/oauth/request_token' % url
 authorize_url = '%s/oauth/authorize/' % url
 access_token_url = '%s/oauth/access_token/' % url
 
@@ -51,7 +51,7 @@ def login(host, url, user):
 
     return session
 
-def get(ses, path, server=SERVER):
+def get(ses, path, server=url):
     res = ses.get(server+path)
     print res
 

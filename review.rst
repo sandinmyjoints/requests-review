@@ -415,7 +415,8 @@ Footnotes
    same, you should get the same result.
 
 .. [#] You would see the same code if you view source in your browser. In most
-   browsers, that's something you can do by looking under the "View" menu.
+   browsers, that's something you can do by looking under the "View" menu, if
+   you're curious.
 
 .. [#] These names are strikingly similar to the kinds of names that are common
    in another programming language you may have heard of, Java. Why that is is a
