@@ -11,7 +11,7 @@ Identification with another is addictive: some of my life's most profound,
 memorable experiences have come when something has bridged the gap between me
 and another human. Because I'm a reader, this can occur across the distance of
 space and time. It's happened with minor Chekov characters, and at the end of
-Kate Mansfield stories. It happens again and again with Norman Rush and with
+Kate Mansfield stories. It happens again and again with Norman Rush and
 George Saunders. The author has pushed a character or an emotion through the
 page and connected with me on a deep level: identification.
 
@@ -299,7 +299,7 @@ and Prejudice*, and *Requests*.
 Footnotes
 ---------
 
-.. [#] As in Monty Python, not the snake genus.
+.. [#] As in Monty Python, not the snake.
 
 .. [#] What does this all mean?
 
