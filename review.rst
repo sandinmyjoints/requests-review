@@ -77,7 +77,7 @@ Structure
 
 Options for structure and sequence abound: writers order narrative
 chronologically, *in media res*, or in more complex ways. Chapters can be short,
-long, or ommitted. From Volumes and Parts to paragraphs and sentences, structure
+long, or omitted. From Volumes and Parts to paragraphs and sentences, structure
 matters.
 
 Requests's parallel structure is typical of programming libraries: the code
@@ -199,7 +199,7 @@ time. Here is a richness that demands and rewards repeated reading, offering
 interpretations as varied as the number of people who read it.
 
 When I write a story, I thrive on subtext, on creating shades of meaning and
-multiple readings. Ambiguity and ellision and irony are my techniques for
+multiple readings. Ambiguity and elision and irony are my techniques for
 dealing with the messiness of reality. But when I type:
 
 .. code-block::
@@ -249,7 +249,7 @@ In a novel or poem, you've been led to understanding and impression by a
 succession of images and literary devices and experiences and revelations. In
 programming, you are led to understanding by encountering problems, ways of
 thinking about those problems, organizing them, and finally grokking them well
-enoguh to devise a solution.
+enough to devise a solution.
 
 Reitz groks Python and the internet well, better than I ever will, as Austen
 grokked relationships and power dynamics better than I ever will. Through
