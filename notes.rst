@@ -1,3 +1,8 @@
+Kara's Critique:
+* It's invigorating! twice
+* Bad API and Great API sections don't flow, need to be put somewhere better or
+  dropped. 
+
 =============================
 
 The only thing DIAGRAM readers *might* care about is how programming is like

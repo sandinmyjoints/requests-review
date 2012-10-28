@@ -142,8 +142,9 @@ The ``response`` that Requests gives me, on the other hand, looks like:
 
 Again, Requests is smaller, and it turns out its two lines of code give me
 something much more useable than urllib2. ``Response [200]`` is meaningful; one
-of the first things every web programmer learns is that 200 means, simply,
-"OK". Requests lets me know my code succeeded.
+of the first things every web programmer learns is that, in HTTP, the language
+of the internet, 200 means, simply, "OK". Requests lets me know my code
+succeeded.
 
 The thing that urllib2 gave me, ``<addinfourl at 4338521656 whose fp =
 <socket._fileobject object at 0x10297ce50>>``, is clear as mud. I can make some
