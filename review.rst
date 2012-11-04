@@ -306,10 +306,10 @@ Footnotes
 
    Three greater-than signs (>>>) is called a prompt, as in Python is prompting
    me to give it something to do. The rest of the line after it is what I
-   type. So this:
+   type. So this::
 
-   >>> requests.get("www.goodreads.com")
-   <Result [200]>
+       >>> requests.get("www.goodreads.com")
+       <Result [200]>
 
    is really this little dialog:
 
