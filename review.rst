@@ -110,19 +110,19 @@ poetry that pack their sentences and stanzas with meaning, allusion, emotion,
 and impact. We might call this *expressive power*.
 
 The collection of programming libraries is also huge. To show how they vary in
-expressive power, I need to introduce a bit of programming code.
+expressive power, I need to introduce a bit of programming code::
 
->>> import urllib2
->>> req = urllib2.Request('http://www.goodreads.com')
->>> response = urllib2.urlopen(req)
->>> response.read()
+    >>> import urllib2
+    >>> req = urllib2.Request('http://www.goodreads.com')
+    >>> response = urllib2.urlopen(req)
+    >>> response.read()
 
 This snippet [#]_ is the standard way to retrieve a webpage (specifically,
 Goodreads' homepage) using a Python library called urllib2. Requests does the
-same thing this way:
+same thing this way::
 
->>> import requests
->>> response = requests.get("http://www.goodreads.com")
+    >>> import requests
+    >>> response = requests.get("http://www.goodreads.com")
 
 Requests' code is two lines instead of four. That might not seem like a big
 difference from urllib2, but note it, and bear with me just a bit longer. Both
@@ -130,15 +130,15 @@ these snippets store the webpage they've retrieved in a variable called
 ``response``. When I'm programming, I'll want to do something useful with
 ``response``: save it to a file, show it to a user, parse it to see what books
 are popular. If I ask Python to describe the
-``response`` returned by urllib2, I get something like [#]_ this:
+``response`` returned by urllib2, I get something like [#]_ this::
 
->>> response
-<addinfourl at 4338521656 whose fp = <socket._fileobject object at 0x10297ce50>>
+    >>> response
+    <addinfourl at 4338521656 whose fp = <socket._fileobject object at 0x10297ce50>>
 
-The ``response`` that Requests gives me, on the other hand, looks like:
+The ``response`` that Requests gives me, on the other hand, looks like::
 
->>> response
-<Response [200]>
+    >>> response
+    <Response [200]>
 
 Again, Requests is smaller, and it turns out its two lines of code give me
 something much more useable than urllib2. ``Response [200]`` is meaningful; one
@@ -152,7 +152,7 @@ guesses about it, but to really understand it, I'd have to spend time rooting
 around in documentation. I just wanted to get a web page.
 
 This difference between the two libraries--their expressive power--plays out
-over and over with the rest of their functionality (getting a webpage is just
+over and over with the rest of their functionality (fetching a webpage is just
 scratching the surface).
 
 ``requests.get`` is Hemingway, or Strunk and White. Declarative. Terse. Say what
