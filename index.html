@@ -138,31 +138,21 @@ poetry that pack their sentences and stanzas with meaning, allusion, emotion,
 and impact. We might call this <em>expressive power</em>.</p>
 
 <p>The collection of programming libraries is also huge. To show how they vary in
-expressive power, I need to introduce a bit of programming code.</p>
+expressive power, I need to introduce a bit of programming code::</p>
 
-<blockquote>
-<blockquote>
-<blockquote>
-<p>import urllib2
-req = urllib2.Request('<a href="http://www.goodreads.com'">http://www.goodreads.com'</a>)
-response = urllib2.urlopen(req)
-response.read()</p>
-</blockquote>
-</blockquote>
-</blockquote>
+<pre><code>&gt;&gt;&gt; import urllib2
+&gt;&gt;&gt; req = urllib2.Request('http://www.goodreads.com')
+&gt;&gt;&gt; response = urllib2.urlopen(req)
+&gt;&gt;&gt; response.read()
+</code></pre>
 
 <p>This snippet [#]_ is the standard way to retrieve a webpage (specifically,
 Goodreads' homepage) using a Python library called urllib2. Requests does the
-same thing this way:</p>
+same thing this way::</p>
 
-<blockquote>
-<blockquote>
-<blockquote>
-<p>import requests
-response = requests.get("<a href="http://www.goodreads.com%22">http://www.goodreads.com"</a>)</p>
-</blockquote>
-</blockquote>
-</blockquote>
+<pre><code>&gt;&gt;&gt; import requests
+&gt;&gt;&gt; response = requests.get("http://www.goodreads.com")
+</code></pre>
 
 <p>Requests' code is two lines instead of four. That might not seem like a big
 difference from urllib2, but note it, and bear with me just a bit longer. Both
@@ -170,27 +160,17 @@ these snippets store the webpage they've retrieved in a variable called
 <code>response</code>. When I'm programming, I'll want to do something useful with
 <code>response</code>: save it to a file, show it to a user, parse it to see what books
 are popular. If I ask Python to describe the
-<code>response</code> returned by urllib2, I get something like [#]_ this:</p>
+<code>response</code> returned by urllib2, I get something like [#]_ this::</p>
 
-<blockquote>
-<blockquote>
-<blockquote>
-<p>response
-&gt;</p>
-</blockquote>
-</blockquote>
-</blockquote>
+<pre><code>&gt;&gt;&gt; response
+&lt;addinfourl at 4338521656 whose fp = &lt;socket._fileobject object at 0x10297ce50&gt;&gt;
+</code></pre>
 
-<p>The <code>response</code> that Requests gives me, on the other hand, looks like:</p>
+<p>The <code>response</code> that Requests gives me, on the other hand, looks like::</p>
 
-<blockquote>
-<blockquote>
-<blockquote>
-<p>response
-</p>
-</blockquote>
-</blockquote>
-</blockquote>
+<pre><code>&gt;&gt;&gt; response
+&lt;Response [200]&gt;
+</code></pre>
 
 <p>Again, Requests is smaller, and it turns out its two lines of code give me
 something much more useable than urllib2. <code>Response [200]</code> is meaningful; one
@@ -204,7 +184,7 @@ guesses about it, but to really understand it, I'd have to spend time rooting
 around in documentation. I just wanted to get a web page.</p>
 
 <p>This difference between the two libraries--their expressive power--plays out
-over and over with the rest of their functionality (getting a webpage is just
+over and over with the rest of their functionality (fetching a webpage is just
 scratching the surface).</p>
 
 <p><code>requests.get</code> is Hemingway, or Strunk and White. Declarative. Terse. Say what
@@ -350,16 +330,11 @@ and Prejudice</em>, and <em>Requests</em>.</p>
 
 <p>Three greater-than signs (&gt;&gt;&gt;) is called a prompt, as in Python is prompting
    me to give it something to do. The rest of the line after it is what I
-   type. So this:</p>
+   type. So this::</p>
 
-<blockquote>
-<blockquote>
-<blockquote>
-<p>requests.get("<a href="http://www.goodreads.com%22">www.goodreads.com"</a>)
-   </p>
-</blockquote>
-</blockquote>
-</blockquote>
+<pre><code>   &gt;&gt;&gt; requests.get("www.goodreads.com")
+   &lt;Result [200]&gt;
+</code></pre>
 
 <p>is really this little dialog:</p>
 
