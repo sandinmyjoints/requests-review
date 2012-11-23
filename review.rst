@@ -8,12 +8,12 @@ by Kenneth Reitz
 Reviewed by William John Bert
 
 Identification with another is addictive: some of my life's most profound,
-memorable experiences have come when something has bridged the gap between me
-and another human. Because I'm a reader, this can occur across the distance of
-space and time. It's happened with minor Chekov characters, and at the end of
-Kate Mansfield stories. It happens again and again with Norman Rush and
-George Saunders. The author has pushed a character or an emotion through the
-page and connected with me on a deep level: identification.
+memorable experiences have come when something bridged the gap between me and
+another human. Because I'm a reader, this can occur across the distance of space
+and time. It's happened with minor Chekov characters, and at the end of Kate
+Mansfield stories. It happens again and again with Norman Rush and George
+Saunders. The author has pushed a character through the page and connected with
+me on a deep level: identification.
 
 Identification happens with computer programming, too.
 
@@ -23,7 +23,7 @@ reading and programming, and I strive to create it when writing and programming.
 Though they deal with the messiness of reality differently, several techniques
 common to both disciplines enable them to achieve this mental intimacy:
 navigating complexity; avoiding pitfalls that inhibit communication; choosing
-structure wisely; harness expressive power; and inhabiting other minds, The
+structure wisely; harnessing expressive power; and inhabiting other minds. The
 Requests library, a work of computer programming by Kenneth Reitz, illustrates
 this.
 
@@ -33,23 +33,23 @@ Navigating Complexity
 As humans, we've evolved to unconsciously filter the staggering possibilities
 available to us at each moment. To manage that complexity, we have rules. Humans
 come with some built in rules (eat when hungry), and easily learn more (don't
-touch hot stoves) and more (don't lie, especially to those you love). When I'm
-writing, my stories might examine how these rules come into conflict with each
-other: a government doctor is ordered to a remote, neglected village, and comes
-to value its people more than his duty to the government.
+touch hot stoves; don't lie, especially to those you love). When I'm writing, my
+stories might examine how these rules come into conflict with each other: a
+government doctor is ordered to a remote, neglected village, and comes to value
+its people more than his duty to the government.
 
 Computers don't come with built-in rules. When I'm programming, if I make a
-mistake, the computer faithfully marches into it head-on. Computers do precisely
-and only what you tell them (frustrations with Microsoft Word notwithstanding),
-and because there are a staggering number of things they can do, programmers
+mistake, the computer marches into it head-on. Computers do precisely and only
+what you tell them (frustrations with Microsoft Word notwithstanding), and
+because there are a staggering number of things they can do, programmers
 constantly battle complexity, sometimes spelling out in excruciating detail
 exactly what it is we want them to do. Programming is an effort to build up sets
 of rules that direct the computer to do something helpful.
 
 Staggering possibilities managed by rules: that's also a description of natural
-language. The difference is, when it comes to natural language, we've had lots
-of time to deal with it. Our brains have evolved pockets that just do languagey
-stuff. When I write, I benefit from this history.
+language. The difference is that natural language has been with our species for
+a long time. Our brains have evolved pockets that just do languagey stuff. When
+I write, I benefit from this history.
 
 When it comes to programming, we're just getting started. Our brains need help.
 
@@ -67,10 +67,10 @@ The stuff that programmers write, called code, can likewise be correct or
 incorrect, beautiful or ugly. Requests is written in a programming language
 called Python [#]_ that's known for being easy to read. Unusually for
 programming languages, Python requires a certain amount of space between bits of
-code, and its style guide encourages using even more space than required. Clear
-and consistent names for built-in elements of the language that programmers
-cannot change aid comprehension--not the case in every language. Reitz embraces
-Python's style.
+code, and its style guide encourages the use of even more space than
+required. Built-in elements of the language that programmers cannot change have
+clear and consistent names that further aid comprehension--not the case in every
+language. In Requests, Reitz embraces Python's style.
 
 Structure
 ---------
@@ -80,17 +80,17 @@ chronologically, *in media res*, or in more complex ways. Chapters can be short,
 long, or omitted. From Volumes and Parts to paragraphs and sentences, structure
 matters.
 
-Requests's parallel structure is typical of programming libraries: the code
-itself, and a document that explains how to use the code. Within the code, there
-are structures that are rough analogs of sentences, paragraphs, chapters, and
-volumes, while the documentation is narrative, starting with easy things and
-advancing to difficult material.
+Requests's dual structure is typical of programming libraries: the code itself,
+and a document that explains how to use the code. Within the code, there are
+structures that are roughly analogous in scale to sentences, paragraphs, and
+chapters, while the documentation proceeds narratively, starting with easy
+matters and advancing to difficult material.
 
 This bundle of code plus documentation is known as an *application programming
-interface*, or simply *API*.
+interface*, or *API*.
 
 APIs are what make it possible to post your Instagram photos to your Facebook
-timeline, checkin on Foursquare from your iPhone, book a flight on United from
+timeline, check-in on Foursquare from your iPhone, book a flight on United from
 Kayak, etc. Without APIs, without a way to share units of functionality with
 each other, each programmer or programming team would be on its own. Everything
 would take much, much longer; each programmer would have to reinvent the wheel.
@@ -104,7 +104,7 @@ Expressive Power
 The number of books to read is huge. Why would you choose one over another?  Why
 might you read a literary novel over, say, a detective novel, or an author you
 love over one you don't? One reason might be that while a thoughtful reader can
-eke meaning from even the flimsiest of genre novels (sometimes even with great
+eke meaning from even the flimsiest of genre novels (sometimes with great
 satisfaction and enjoyment), we tend to find more significance in novels and
 poetry that pack their sentences and stanzas with meaning, allusion, emotion,
 and impact. We might call this *expressive power*.
@@ -152,8 +152,10 @@ guesses about it, but to really understand it, I'd have to spend time rooting
 around in documentation. I just wanted to get a web page.
 
 This difference between the two libraries--their expressive power--plays out
-over and over with the rest of their functionality (fetching a webpage is just
-scratching the surface).
+over and over with the rest of their functionality. Fetching a webpage is just
+scratching the surface, and the efficiency penalty imposed by the gap in
+expressive power compounds as you do more complicated, hence interesting,
+things.
 
 ``requests.get`` is Hemingway, or Strunk and White. Declarative. Terse. Say what
 you mean as plainly as possible. Behind the scenes, its two lines are doing more
@@ -162,16 +164,15 @@ things at once: moving plot forward, imparting character, setting tone, painting
 a scene.
 
 urllib2's jumble is verbose jargon, like legalese: heretofore, whereas, the
-party of the first part. Its API is a menagerie of abstractions with names
-such as ``OpenerDirector`` and ``HTTPPasswordMgrWithDefaultRealm`` [#]_ that
-have to be looked up to be understood, and are often underwhelming in their
-capabilities.
+party of the first part. Its API is a menagerie of abstractions with names such
+as ``OpenerDirector`` and ``HTTPPasswordMgrWithDefaultRealm`` [#]_ that must be
+looked up to be understood, and are often underwhelming in their capabilities.
 
-Greater expressive power matches more closely the workings of my mind, where my
-thoughts flow in a continuous stream. It's internal. I can't achieve
-identification with a legal briefing. But with a novel or a good API, the pace
-of meaning accelerates, syncing with my inner monologue, setting the stage for
-identification.
+Greater expressive power matches more closely the workings of my mind, where
+thought flows in a continuous stream. It eases the transit of thought across the
+boundary between internal and external. With a good novel or a good API, the
+pace of comprehension accelerates, syncing with my inner monologue, setting the
+stage for identification.
 
 Dealing with Reality
 --------------------
@@ -208,13 +209,13 @@ dealing with the messiness of reality. But when I type:
   import requests, config
   user = config.user
   host = config.host
-  url = "/api/login"
+  path = '/api/login'
   data = {
-    "email": user['email'],
-    "password": user['password']
+    'email':    user['email'],
+    'password': user['password']
   }
   session = requests.Session()
-  session.post(host+url, data=data)
+  session.post(url=host+path, data=data)
 
 I aim to banish ambiguity. I name my variables clearly, according to what
 data they hold. I structure the code to indicate the flow of execution. Requests
@@ -231,7 +232,7 @@ out how they are connected.
 What it's like to work with a bad API
 -------------------------------------
 
-You get annoyed. You say of whoever created it, What were they thinking?  You
+You get annoyed. You say of whoever created it, What were they thinking? You
 feel bogged down. Nothing comes easy. You have to keep taking breaks. You feel
 forgetful. You wonder if it's your fault, if you're missing something everyone
 else sees. You get a headache. You curse. You may bite or click your nails, or
@@ -272,8 +273,8 @@ computer itself.
 
 This habitation of minds outside my own is part of what draws me to both these
 pursuits. It is a challenge. It broadens my world. Thinking of others, as others
-think, anticipating their needs and wants and questions, helps me escape myself
-and gain perspective. It's invigorating!
+think, anticipating their needs and wants and questions, helps me transcend
+myself and gain perspective. It's invigorating!
 
 What it's like to work with a great API
 ---------------------------------------
@@ -284,14 +285,14 @@ run your thoughts through it, and have them upgraded. As you figure out how to
 do what you set out to do, you realize other things that would also be cool to
 do, and you find that the API has ways to do them, too! You think the way
 someone else thought, and understand their thinking on a deep level. You have a
-sense that we are all in this together, we're not so different.
+sense that we are all in this together. We're not so different.
 
 Identification
 --------------
 
 Identification is addictive. I seek it out, and I have an urge to spark it in
 others. The difficulties of navigating complexity while avoid communication
-pitfalls, of harnessing expressive power, and inhabiting other minds, make it
+pitfalls, of harnessing expressive power, and of inhabiting other minds make it
 difficult to find and create. If I can ever achieve it in my own work--whether
 writing or programming--it will be through studying--grokking--works like *Pride
 and Prejudice*, and *Requests*.
@@ -304,9 +305,9 @@ Footnotes
 
 .. [#] What does this all mean?
 
-   Three greater-than signs (>>>) is called a prompt, as in Python is prompting
-   me to give it something to do. The rest of the line after it is what I
-   type. So this::
+   Three greater-than signs (`>>>`) is called a prompt, as in Python is
+   prompting me to give it something to do. The rest of the line after it is
+   what I type. So this::
 
        >>> requests.get("www.goodreads.com")
        <Result [200]>
@@ -323,7 +324,7 @@ Footnotes
    each other examples: this is what I did; this is what I got; if you do the
    same, you should get the same result.
 
-.. [#] I say "something like" because the exact numbers will vary on different
+.. [#] I say "something like" because the exact details will vary on different
    computers and at different times of execution.
 
 .. [#] These names are strikingly similar to the kinds of names that are common
